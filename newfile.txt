@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 我是master分支
 masterdemo22
   window.onload=function runoob(){
@@ -57,3 +58,4 @@ masterdemo22
 		      component:() => import("@/views/FinancialQuotient/components/SignUpResult"),
 		      meta:{title:'报名结果'}
 		  },
+
