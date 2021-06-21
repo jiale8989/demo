@@ -1,2 +1,59 @@
 我是master分支
 masterdemo22
+  window.onload=function runoob(){
+    
+    // var aLink = document.createElement("a");
+    // aLink.className = 'call_up_a_link';
+    // aLink.href = "weixin://dl/business/?t=sepkA9IuEXq";
+    // aLink.style.cssText = "display:none;width:0px;height:0px;";
+    // document.body.appendChild(aLink);
+    // aLink.click();
+    console.log('----进来跳转了---')
+
+  }
+
+    <a ref="auto" href="weixin://dl/business/?t=sepkA9IuEXq">自动打开功能</a>
+    http://localhost/Product/newProDetailBack?id=276&Code=A000001&channelSource=7  运费险链接
+    http://localhost/FinancialQuotient?id=352&wayT=w  财商微信   352（财商1） 
+    355（财商2）
+
+
+    登录统一样式是否进行优化修改
+    //报名结果链接：/registResult?resultType=w  或者g  和二维码的生成参数保持一致
+
+     /registResult?resultType=g 公众号环境下
+    /registResult?resultType=w  微信环境下
+
+
+      //TODO 测试使用
+      {
+        pagePath: "pages/registresult/index",
+        text: "我的2",
+        iconPath: "assets/my.png",
+        selectedIconPath: "assets/selected_my.png"
+      }
+
+      URL secheme生成：pages/registresult/index    resultType=g   resultType=w
+
+   
+      财商地址链接：
+        /FinancialQuotient?id=352&productId=266&resultType=w
+       http://192.168.162.113/FinancialQuotient?id=352&productId=266&resultType=w  微信352
+       http://192.168.162.113/FinancialQuotient?id=355&productId=266&resultType=g  公众号355
+
+
+
+       http://localhost/signIn?resultType=g  //弹框调试
+
+
+       重构页面提交的时候，需要过滤已经线上提过的页面   ----重疾
+       最后路由文件进行删除处理
+
+
+
+          {
+		      path:'/registResult',
+		      name:'registResult',
+		      component:() => import("@/views/FinancialQuotient/components/SignUpResult"),
+		      meta:{title:'报名结果'}
+		  },
