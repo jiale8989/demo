@@ -1,7 +1,7 @@
 {
-  "name": "platform-template-generator",
+  "name": "{{name}}",
   "version": "1.0.0",
-  "description": "",
+  "description": "{{description}}",
   "main": "createPage.js",
   "bin": {
     "ct": "./bin/createDefaultTemplate.js",
@@ -19,7 +19,7 @@
     "url": "git+https://github.com/woai3c/platform-template-generator.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "{{author}}",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/woai3c/platform-template-generator/issues"
