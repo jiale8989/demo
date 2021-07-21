@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/woai3c/platform-template-generator/issues"
   },
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/yourname/repositoryname.git"
+  }
 }
